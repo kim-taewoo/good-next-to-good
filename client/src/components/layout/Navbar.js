@@ -20,10 +20,10 @@ const Navbar = ({ title, icon }) => {
     <Fragment>
       <li>Hello {user && user.name}</li>
       <li>
-        <a onClick={onLogout} href='#'>
+        <button onClick={onLogout}>
           <i className='fas fa-sign-out-alt'></i>{' '}
           <span className='hide-sm'>Logout</span>
-        </a>
+        </button>
       </li>
     </Fragment>
   );
